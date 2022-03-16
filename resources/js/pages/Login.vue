@@ -55,7 +55,7 @@ export default {
                 this.$store.commit('setEmail', response.data.data.user.email);
                 this.$store.commit('setName', response.data.data.user.name);
                 this.$store.commit('setToken', response.data.data.user.access_token);
-                this.$router.push(window.config.base_url+'/community');
+                this.$router.push('/'+window.config.base_url+'community');
             } else {
                 this.error = response.data.messages
             }
@@ -67,7 +67,7 @@ export default {
       checkLogin(){
             var login = this.$store.state.user.isLoggedIn;
             if(login){
-                this.$router.push(window.config.base_url+'/community');
+                this.$router.push('/'+window.config.base_url+'community');
             }
       }
     },
