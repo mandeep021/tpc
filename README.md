@@ -29,3 +29,9 @@ npm install
 ```
 npm run watch
 ```
+
+### Login details for testing
+```
+email id: mandeep.aghera@gmail.com
+password: password
+```
