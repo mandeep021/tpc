@@ -47,7 +47,7 @@ export default {
         .then(response => {
             console.log(response.data)
             if (response.data.success) {
-                this.$router.push(window.config.base_url+'/community');    
+                this.$router.push('/'+window.config.base_url+'community');    
             } else {
                 this.error = response.data.messages
             }
